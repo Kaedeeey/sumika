@@ -301,40 +301,6 @@ header .headerInner .nav.active {
 .fixed-btn img {
   width: 70%;
 }
-.top-pc {
-  display: block;
-}
-@media screen and (max-width: 680px) {
-  .top-pc {
-    display: none;
-  }
-}
-.top-sp {
-  display: none;
-}
-@media screen and (max-width: 680px) {
-  .top-sp {
-    display: block;
-  }
-}
-.center {
-  width: 100%;
-  margin: 0 auto;
-}
-@media screen and (max-width: 680px) {
-  .center {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-.center img {
-  width: 100%;
-}
-.banner-pc {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
-}
 .sec100 {
   width: 100%;
   margin: 0 0 100px;
@@ -384,6 +350,41 @@ header .headerInner .nav.active {
     display: none;
   }
 }
+.top-pc {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .top-pc {
+    display: none;
+  }
+}
+.top-sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .top-sp {
+    display: block;
+  }
+}
+.center {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 680px) {
+  .center {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.center img {
+  width: 100%;
+}
+.banner-pc {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
 section {
   width: 80%;
   margin: 100px 10% 200px;
@@ -396,17 +397,21 @@ section {
 }
 h2 {
   font-size: 3.6rem;
-  margin: 0 0 50px 0;
   color: #005c55;
+  margin: 200px 0 50px 0;
   text-shadow: 2px 2px 20px #fafff3;
 }
 @media screen and (max-width: 680px) {
   h2 {
     font-size: 2rem;
-    margin: 0 0 20px 0;
+    margin: 0 0 50px 0;
     color: #005c55;
     text-shadow: 2px 2px 20px #fafff3;
   }
+}
+.h2-g {
+  width: 80%;
+  margin: 0 auto;
 }
 .banner-pc {
   display: block;

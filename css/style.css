@@ -55,7 +55,7 @@ body {
 .sp-h {
   width: 100%;
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 @media screen and (max-width: 680px) {
   .sp-h {
@@ -422,6 +422,12 @@ h2 {
 }
 .o-info {
   text-align: right;
+  margin: 0 50px 0 0;
+}
+@media screen and (max-width: 680px) {
+  .o-info {
+    margin: 0 10px 50px 0;
+  }
 }
 .old-info {
   color: #44382d;
@@ -429,13 +435,11 @@ h2 {
   font-size: 1.6rem;
   border-bottom: 1px solid;
   line-height: 3rem;
-  padding: 0 30px 0 0;
 }
 @media screen and (max-width: 680px) {
   .old-info {
     font-size: 1.2rem;
     line-height: 2.5rem;
-    padding:0 10px 0 0;
   }
 }
 .old-info:hover {
@@ -769,6 +773,11 @@ h2 {
 }
 .parallax.back0 {
   background-image: url(../img/para-content0.png);
+}
+@media screen and (max-width: 680px) {
+  .parallax.back0 {
+    background-image: url(../img/para-content0.png);
+  }
 }
 .parallax.back1 {
   background-image: url(../img/para-content1.png);
