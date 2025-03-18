@@ -1,0 +1,555 @@
+@charset "UTF-8";
+/* * {
+  outline: 1px solid blue;
+} */
+html {
+  font-size: 10px;
+  scroll-behavior: smooth; /*滑らかにボタンを押して該当場所に飛ぶ*/
+}
+body {
+  background-color: #fafff3;
+  color: #44382d;
+  font-family: "ヒラギノ角ゴ ProN", ‘Hiragino Sans’, "游ゴシック", sans-serif;
+}
+.container {
+  width: 100%; /*固定表示はwidth*/
+  margin: 0 auto; /*center表示:上下=0,左右=auto;*/
+  /* z-index: 1; */
+}
+.header {
+  width: 100%;
+  height: 15vh;
+  display: flex; /*ヘッダーを横並び*/
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(250, 255, 243, 0.5);
+  color: #fff;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+@media screen and (max-width: 680px) {
+  .header {
+    width: 100%;
+    height: 15vh;
+    display: block;
+    text-align: center;
+    background-color: rgb(250, 255, 243, 0.5);
+    color: #fff;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+  }
+}
+.banner-sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .banner-sp {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.sp-h {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 680px) {
+  .sp-h {
+    width: 370px;
+  }
+}
+.logo-pc {
+  display: block;
+  width: 80%;
+  margin: 0 0 0 50px;
+}
+@media screen and (max-width: 680px) {
+  .logo-pc {
+    display: none;
+  }
+}
+.logo-sp {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .logo-sp {
+    width: 50px;
+    display: block;
+    /* padding: 15px 0; */
+    margin: 10px 0 0 10px;
+  }
+}
+.list-h {
+  width: 50%;
+}
+@media screen and (max-width: 680px) {
+  .list-h {
+    width: 280px;
+    padding: 15px 0;
+  }
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.trend-search-h {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .trend-search-h {
+    width: 75%;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+}
+.search-btn {
+  text-decoration: none;
+  line-height: 3rem;
+  background-color: #005c55;
+  border: 6px solid #005c55;
+}
+@media screen and (max-width: 680px) {
+  .search-btn {
+    line-height: 2rem;
+  }
+}
+.search-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-pc {
+  display: block;
+}
+@media screen and (max-width: 680px) {
+  .nav-pc {
+    display: none;
+  }
+}
+.nav {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .nav {
+    display: block;
+  }
+}
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 50px 0 0;
+}
+@media screen and (max-width: 680px) {
+  .nav1 {
+    display: none;
+  }
+}
+.icon-item {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% / 5);
+  margin: 0 5px;
+}
+.icon-item img {
+  width: 75%;
+  margin: 0 auto;
+}
+.icon-item-tx {
+  color: #005c55;
+  margin: 5px 0 0 0;
+  text-decoration: none;
+}
+.icon-item-tx:hover {
+  color: #999;
+}
+/* --------------------------------ハンバーガー------------------------*/
+header .headerInner {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  header .headerInner {
+    display: block;
+    padding: 20px;
+  }
+}
+header .headerInner .openbtn {
+  position: fixed;
+  z-index: 10; /*ボタンを最前面に*/
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  header .headerInner .openbtn {
+    display: block;
+  }
+}
+header .headerInner .openbtn span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #005c55;
+  width: 45%;
+}
+header .headerInner .openbtn span:nth-of-type(1) {
+  top: 15px;
+}
+header .headerInner .openbtn span:nth-of-type(2) {
+  top: 23px;
+}
+header .headerInner .openbtn span:nth-of-type(3) {
+  top: 31px;
+}
+header .headerInner .openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+  background-color: #fff;
+}
+header .headerInner .openbtn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+header .headerInner .openbtn.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+  background-color: #fff;
+}
+@media screen and (max-width: 680px) {
+  header .headerInner .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: all 0.6s;
+    background-color: #005c55;
+    width: 100%;
+    height: 100vh;
+  }
+}
+header .headerInner .nav .navList {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 680px) {
+  header .headerInner .nav .navList {
+    flex-direction: column;
+    padding: 70px;
+    width: auto;
+  }
+}
+header .headerInner .nav .navList .item {
+  text-align: center;
+  width: 20%;
+}
+@media screen and (max-width: 680px) {
+  header .headerInner .nav .navList .item {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+}
+header .headerInner .nav .navList .item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+header .headerInner .nav.active {
+  right: 0;
+  overflow: hidden;
+} /*# sourceMappingURL=style.css.map */
+.navList li a {
+  border-bottom: 1px solid #f0f0f0;
+}
+.navList li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 5rem;
+}
+.navList li a:hover {
+  color: #f1ff9f;
+}
+.openbtn {
+  margin: 45px 0px 0;
+}
+/* --------------------------------ここまでがハンバーガー ------------------------*/
+.center {
+  width: 80%;
+  margin: 100px 10% 200px;
+}
+@media screen and (max-width: 680px) {
+  .center {
+    width: 80%;
+    margin: 50px 10% 50px;
+  }
+}
+h2 {
+  font-size: 3.6rem;
+  margin: 0 0 50px 0;
+  color: #005c55;
+  text-shadow: 2px 2px 20px #fafff3;
+}
+@media screen and (max-width: 680px) {
+  h2 {
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    color: #005c55;
+    text-shadow: 2px 2px 20px #fafff3;
+  }
+}
+h3 {
+  font-size: 2rem;
+  margin: 50px 0 0 0;
+  line-height: 2.8rem;
+  border-bottom: #44382d 1px solid;
+}
+@media screen and (max-width: 680px) {
+  h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 20px 0 0 0;
+  }
+}
+.tx {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+@media screen and (max-width: 680px) {
+  .tx {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}
+ul {
+  text-decoration: none;
+}
+.ul-tx {
+  text-decoration: none;
+  text-align: right;
+  margin: 50px 20px 200px 0;
+}
+@media screen and (max-width: 680px) {
+  .ul-tx {
+    text-decoration: none;
+    margin-top: 20px 0 100px;
+  }
+}
+.login-container {
+  width: 80%;
+  margin: 50px auto 100px;
+  display: grid;
+  align-items: center;
+}
+@media screen and (max-width: 680px) {
+  .login-container {
+    width: 80%;
+    margin: 20px auto 50px;
+  }
+}
+form {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+.form-group {
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  margin: 10px 0;
+  display: flex;
+  justify-content: left;
+}
+@media screen and (max-width: 680px) {
+  .form-group {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    margin: 10px 0;
+    display: block;
+  }
+}
+.input-tx {
+  width: 70%;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+@media screen and (max-width: 680px) {
+  .input-tx {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}
+.name {
+  width: 30%;
+  text-align: center;
+}
+@media screen and (max-width: 680px) {
+  .name {
+    width: 100%;
+  }
+}
+.send-btn {
+  width: 60%;
+  margin: 50px auto 200px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  background-color: #005c55;
+  color: #fff;
+}
+@media screen and (max-width: 680px) {
+  .send-btn {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}
+.send-btn:hover {
+  box-shadow: unset;
+  transform: translateY(4px);
+  color: #005c55;
+  background-color: #f0f0f0;
+}
+/* ----------------------------------ここからフッター----------------------------- */
+footer {
+  background-color: #44382d;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: auto;
+}
+.footer-all {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+}
+@media screen and (max-width: 680px) {
+  .footer-all {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+.footer-all a:hover {
+  color: #f1ff9f;
+}
+.footer-list1 {
+  width: 33%;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .footer-list1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+}
+.footer-list1 li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-list2 {
+  width: 33%;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .footer-list2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+}
+.footer-list2 li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-list3 {
+  width: 34%;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .footer-list3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+}
+.f-logo-pc {
+  width: 80%;
+}
+@media screen and (max-width: 680px) {
+  .f-logo-pc {
+    display: none;
+  }
+}
+.f-cacf {
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .f-cacf {
+    display: none;
+  }
+}
+.sns {
+  display: flex;
+  margin: 30px auto;
+}
+@media screen and (max-width: 680px) {
+  .sns {
+    width: 60%;
+    display: flex;
+    margin: 0px auto 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.sns p {
+  font-size: 1.4rem;
+  margin: 0 10px 0 0;
+}
+@media screen and (max-width: 680px) {
+  .sns p {
+    font-size: 1.4rem;
+    margin: 0 10px 0 0;
+  }
+}
+.sns img {
+  width: 30px;
+  margin: 0 10px;
+}
+@media screen and (max-width: 680px) {
+  .sns img {
+    width: 30px;
+    margin: 0 10px;
+  }
+}
