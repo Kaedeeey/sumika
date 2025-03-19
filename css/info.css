@@ -56,6 +56,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 680px) {
   .sp-h {
@@ -84,6 +85,7 @@ body {
   }
 }
 .list-h {
+  display: none;
   width: 50%;
 }
 @media screen and (max-width: 680px) {
@@ -397,9 +399,8 @@ header .headerInner .nav.active {
   }
 }
 .return-top {
-  width: 80px;
+  width: 40%;
   display: block;
-  width: 200px;
   padding: 5px;
   box-sizing: border-box;
   background: #ccc;
@@ -407,9 +408,25 @@ header .headerInner .nav.active {
   text-decoration: none;
   text-align: center;
   margin: 50px auto;
+  font-size: 1.6rem;
+  line-height: 3.5em;
+  font-weight: bold;
+}
+@media screen and (max-width: 680px) {
+  .return-top {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    margin-top: 10px;
+  }
+}
+.return-top:hover {
+  box-shadow: unset;
+  transform: translateY(4px);
+  color: #f0f0f0;
+  background-color: #005c55;
 }
 .return-top a {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 3.5rem;
   margin-top: 20px;
   text-decoration: none;
@@ -417,15 +434,10 @@ header .headerInner .nav.active {
 }
 @media screen and (max-width: 680px) {
   .return-top a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2.8rem;
     margin-top: 10px;
   }
-}
-.return-top a:hover {
-  color: #f1ff9f;
-  text-decoration: none;
-  border-bottom: 1px solid;
 }
 /* ----------------------------------ここからフッター----------------------------- */
 footer {
