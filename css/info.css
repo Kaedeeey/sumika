@@ -84,11 +84,12 @@ body {
   }
 }
 .list-h {
-  display: none;
+  width: 50%;
 }
 @media screen and (max-width: 680px) {
   .list-h {
-     display: none;
+    width: 280px;
+    padding: 15px 0;
   }
 }
 .search {
@@ -397,7 +398,6 @@ header .headerInner .nav.active {
 }
 .return-top {
   width: 80px;
-  border-radius: 100px;
   display: block;
   width: 200px;
   padding: 5px;
