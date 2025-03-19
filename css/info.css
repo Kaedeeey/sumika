@@ -84,12 +84,11 @@ body {
   }
 }
 .list-h {
-  width: 50%;
+  display: none;
 }
 @media screen and (max-width: 680px) {
   .list-h {
-    width: 280px;
-    padding: 15px 0;
+     display: none;
   }
 }
 .search {
@@ -403,7 +402,7 @@ header .headerInner .nav.active {
   width: 200px;
   padding: 5px;
   box-sizing: border-box;
-  background: #005c55;
+  background: #ccc;
   color: #fff;
   text-decoration: none;
   text-align: center;
