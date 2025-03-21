@@ -362,7 +362,6 @@ header .headerInner .nav.active {
 .info-sec {
   width: 80%;
   margin: 100px 10% 200px;
-  display: flex;
 }
 @media screen and (max-width: 680px) {
   .info-sec {
@@ -372,11 +371,13 @@ header .headerInner .nav.active {
   }
 }
 .info-list {
-  width: 65%;
+  width: 100%;
+  display: flex;
 }
 @media screen and (max-width: 680px) {
   .info-list {
     width: 100%;
+    display: block;
   }
 }
 h2 {
@@ -393,9 +394,8 @@ h2 {
     text-shadow: 2px 2px 20px #fafff3;
   }
 }
-.date-info {
+/* .date-info {
   display: flex;
-  /* padding: 10px 10px; */
   margin: 20px 50px;
   font-size: 2rem;
   color: #44382d;
@@ -420,10 +420,10 @@ h2 {
   color: #005c55;
   text-decoration: none;
   border-bottom: 1px solid;
-}
+} */
 .o-info {
   text-align: right;
-  margin: 0 50px 0 0;
+  margin: 10px 0 0 0;
 }
 @media screen and (max-width: 680px) {
   .o-info {
