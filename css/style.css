@@ -768,17 +768,13 @@ h2 {
 }
 @media screen and (max-width: 680px) {
   .parallax {
-    min-height: 200px;
-    background-attachment: block;
+    min-height: 150px;
+    background-attachment: scroll;
+    background-position: 0% 0%;
   }
 }
 .parallax.back0 {
   background-image: url(../img/para-content0.png);
-}
-@media screen and (max-width: 680px) {
-  .parallax.back0 {
-    background-image: url(../img/para-content0.png);
-  }
 }
 .parallax.back1 {
   background-image: url(../img/para-content1.png);
@@ -803,7 +799,7 @@ h2 {
 @media screen and (max-width: 680px) {
   .para-h2 {
     font-size: 2rem;
-    line-height: 20rem;
+    line-height: 15rem;
     color: #005c55;
     text-shadow: 2px 2px 20px #fafff3;
     padding: 0 0 0 10%;
@@ -857,7 +853,7 @@ h2 {
   width: calc(100% / 3 - 20px);
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -875,10 +871,12 @@ h2 {
   width: 50px;
   text-align: center;
   font-size: 1.2rem;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
   background-color: #fbb03b;
   color: #fff;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-best {
@@ -891,21 +889,23 @@ h2 {
   }
 }
 .tag-fav img {
-  width: 30px;
+  width: 20px;
 }
 @media screen and (max-width: 680px) {
   .tag-fav img {
-    width: 25px;
+    width: 15px;
   }
 }
 .tag-new {
   width: 50px;
   text-align: center;
   font-size: 1.2rem;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
   background-color: #005c55;
   color: #fff;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-new {
@@ -921,10 +921,12 @@ h2 {
   width: 50px;
   text-align: center;
   font-size: 1.2rem;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
   background-color: #ed1c24;
   color: #fff;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-sale {
@@ -938,14 +940,14 @@ h2 {
 }
 .tag-none {
   width: 50px;
-  display: flex;
   text-align: center;
-  align-items: center;
-  font-size: 1rem;
-  line-height: 3.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   background-color: transparent; /*透明色*/
-  color: #fafff3;
-  padding: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-none {
