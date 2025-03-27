@@ -872,7 +872,7 @@ h2 {
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  background-color: #fbb03b;
+  background-color: #44382d;
   color: #fff;
   display: flex;
   align-items: center;
@@ -901,7 +901,7 @@ h2 {
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  background-color: #005c55;
+  background-color: #fbb03b;
   color: #fff;
   display: flex;
   align-items: center;
@@ -913,8 +913,6 @@ h2 {
     text-align: center;
     font-size: 0.9rem;
     line-height: 2rem;
-    background-color: #005c55;
-    color: #fff;
   }
 }
 .tag-sale {
@@ -977,7 +975,7 @@ h2 {
   line-height: 4rem;
   text-align: center;
   color: #fff;
-  background-color: #44382d;
+  background-color: #005c55;
 }
 @media screen and (max-width: 680px) {
   .no-tag {
@@ -1012,6 +1010,9 @@ span {
   margin: 0 auto;
   box-shadow: 2px 2px 2px #ccc;
   align-items: center;
+}
+.no img:hover {
+  opacity: 0.6;
 }
 .name-price {
   width: calc(100% - 20px);

@@ -117,8 +117,445 @@
       </header>
       <main>
         <div class="center">
+          <button class="sort-table-btn">詳細検索</button>
           <h2 class="h2">Item list - 商品一覧</h2>
-          <p class="tx">現在、制作中です。</p>
+          <div class="sort-item">
+            <div class="sort-table">
+              <h3>カテゴリー</h3>
+              <ul class="list">
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="ALL"
+                      class="checkbox"
+                    />ALL
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="インテリア"
+                      class="checkbox"
+                    />インテリア
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="キッチン"
+                      class="checkbox"
+                    />キッチン
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="オフィス"
+                      class="checkbox"
+                    />オフィス
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="ブック"
+                      class="checkbox"
+                    />ブック
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="ステーショナリー"
+                      class="checkbox"
+                    />ステーショナリー
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="クラフト"
+                      class="checkbox"
+                    />クラフト
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="ファッション"
+                      class="checkbox"
+                    />ファッション
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="コスメ"
+                      class="checkbox"
+                    />コスメ
+                  </label>
+                </li>
+              </ul>
+              <h3>商品タイプ</h3>
+              <ul class="list">
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="ALL"
+                      class="checkbox"
+                    />ALL
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="BEST"
+                      class="checkbox"
+                    />BEST
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="NEW"
+                      class="checkbox"
+                    />NEW
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="SALE"
+                      class="checkbox"
+                    />SALE
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="RECOMEND"
+                      class="checkbox"
+                    />RECOMEND
+                  </label>
+                </li>
+              </ul>
+              <h3>在庫状況</h3>
+              <ul class="list">
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="ALL"
+                      class="checkbox"
+                    />ALL
+                  </label>
+                </li>
+                <li>
+                  <label class="selectbtn">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="IN STOCK"
+                      class="checkbox"
+                    />IN STOCK
+                  </label>
+                </li>
+              </ul>
+              <h3>価格帯</h3>
+              <label class="selectbox-4">
+                <select>
+                  <option>〜¥999</option>
+                  <option>¥1,000〜¥2,999</option>
+                  <option>¥3,000〜¥4,999</option>
+                  <option>¥5,000〜¥6,999</option>
+                  <option>¥7,000〜¥9,999</option>
+                  <option>¥10,000〜</option>
+                </select>
+              </label>
+              <button class="jyoken-btn">この条件で検索</button>
+              <button class="clear-btn">クリア</button>
+            </div>
+            <div class="item-list">
+              <div class="option">
+                <p>検索結果　20件</p>
+                <p>並び替え↑↓</p>
+              </div>
+              <div class="tag-fav-all">
+                <div class="tag-fav">
+                  <p class="tag-best">BEST</p>
+                  <img src="../img/fav.png" alt="" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-best">BEST</p>
+                  <img src="../img/fav.png" alt="" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-best">BEST</p>
+                  <img src="../img/fav.png" alt="" />
+                </div>
+              </div>
+              <ul class="content-flex">
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item1.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item2.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item3.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="n-p">
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >ベルガモリュクス</a
+                  >
+                  <p class="price">¥2,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >ナチュエールセット</a
+                  >
+                  <p class="price">¥2,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >ネイルポリッシュGD</a
+                  >
+                  <p class="price">¥980</p>
+                </div>
+              </div>
+              <div class="tag-fav-all">
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" />
+                </div>
+              </div>
+              <ul class="content-flex">
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item4.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item5.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item6.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="n-p">
+                <div class="name-price">
+                  <a href="product/product.html" class="name">メイクポーチLG</a>
+                  <p class="price">¥1,580</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name">ケトルBG</a>
+                  <p class="price">¥3,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name">クレイポットM</a>
+                  <p class="price">¥4,980</p>
+                </div>
+              </div>
+              <div class="tag-fav-all">
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-new">NEW</p>
+                  <img src="../img/fav.png" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" />
+                </div>
+              </div>
+              <ul class="content-flex">
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item7.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item8.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item9.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="n-p">
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >サンセットプレート</a
+                  >
+                  <p class="price">¥1,280</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name">朽葉皿M</a>
+                  <p class="price">¥1,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name">モダンスリッパ</a>
+                  <p class="price">¥1,980</p>
+                </div>
+              </div>
+              <div class="tag-fav-all">
+                <div class="tag-fav">
+                  <p class="tag-sale">SALE</p>
+                  <img src="../img/fav.png" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-sale">SALE</p>
+                  <img src="../img/fav.png" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-sale">SALE</p>
+                  <img src="../img/fav.png" />
+                </div>
+              </div>
+              <ul class="content-flex">
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item10.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item11.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item12.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="n-p">
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >フェザーリュクス</a
+                  >
+                  <p class="price">¥2,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >モダンタオル3枚セット</a
+                  >
+                  <p class="price">¥2,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >ぬくぬくソックス</a
+                  >
+                  <p class="price">¥980</p>
+                </div>
+              </div>
+              <div class="tag-fav-all">
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" alt="一時保存ボタン" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" alt="一時保存ボタン" />
+                </div>
+                <div class="tag-fav">
+                  <p class="tag-none"></p>
+                  <img src="../img/fav.png" alt="一時保存ボタン" />
+                </div>
+              </div>
+              <ul class="content-flex">
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item13.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item14.png" alt=""
+                  /></a>
+                </li>
+                <li class="no">
+                  <a href="../product/product-1.html"
+                    ><img src="../img/item15.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="n-p">
+                <div class="name-price">
+                  <a href="product/product.html" class="name"
+                    >Wappaランチボックス</a
+                  >
+                  <p class="price">¥1,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name">バスケットL</a>
+                  <p class="price">¥2,980</p>
+                </div>
+                <div class="name-price">
+                  <a href="product/product.html" class="name">アロマベール</a>
+                  <p class="price">¥1,980</p>
+                </div>
+              </div>
+              <ul class="page-btn">
+                <li><button>1</button></li>
+                <li><button>2</button></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </main>
       <footer>
