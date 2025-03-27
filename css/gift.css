@@ -613,47 +613,49 @@ h2 {
   width: calc(100% / 2 - 20px);
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 1.2rem;
   font-weight: bold;
 }
 @media screen and (max-width: 680px) {
   .tag-fav {
     width: calc(100% / 2);
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
     font-size: 1rem;
-  }
-}
-.tag-fav img {
-  width: 30px;
-}
-@media screen and (max-width: 680px) {
-  .tag-fav img {
-    width: 25px;
+    font-weight: bold;
   }
 }
 .tag-best {
+  display: flex;
   width: 50px;
   text-align: center;
-  font-size: 1.4rem;
-  line-height: 3rem;
-  background-color: #fbb03b;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: #44382d;
   color: #fff;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-best {
     width: 40px;
+    text-align: center;
     font-size: 0.9rem;
     line-height: 2rem;
   }
 }
 .tag-new {
+  display: flex;
   width: 50px;
   text-align: center;
-  font-size: 1rem;
-  line-height: 3rem;
-  background-color: #005c55;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: #fbb03b;
   color: #fff;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-new {
@@ -661,17 +663,18 @@ h2 {
     text-align: center;
     font-size: 0.9rem;
     line-height: 2rem;
-    background-color: #005c55;
-    color: #fff;
   }
 }
 .tag-sale {
+  display: flex;
   width: 50px;
   text-align: center;
-  font-size: 1rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   background-color: #ed1c24;
   color: #fff;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-sale {
@@ -679,25 +682,33 @@ h2 {
     text-align: center;
     font-size: 0.9rem;
     line-height: 2rem;
-    background-color: #ed1c24;
-    color: #fff;
   }
 }
 .tag-none {
-  width: 50px;
   display: flex;
+  width: 50px;
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  background-color: transparent; /*透明色*/
+  color: #fff;
   align-items: center;
-  font-size: 1rem;
-  line-height: 3rem;
-  background-color: transparent;
-  color: #fafff3;
+  justify-content: center;
 }
 @media screen and (max-width: 680px) {
   .tag-none {
     width: 40px;
+    text-align: center;
     font-size: 0.9rem;
     line-height: 2rem;
+  }
+}
+.tag-fav img {
+  width: 20px;
+}
+@media screen and (max-width: 680px) {
+  .tag-fav img {
+    width: 15px;
   }
 }
 .no {
@@ -744,7 +755,7 @@ h2 {
   align-items: center;
 }
 .name-price {
-  width: calc(100% - 20px);
+  width: 100%;
   display: flex;
   padding: 10px;
   font-size: 1.6rem;
@@ -752,7 +763,6 @@ h2 {
 }
 @media screen and (max-width: 680px) {
   .name-price {
-    width: calc(100% - 3);
     display: block;
     padding: 5px;
     font-size: 1.2rem;
@@ -765,12 +775,19 @@ h2 {
   padding: 0 5px;
   text-decoration: none;
   color: #44382d;
+  font-size: 1.6rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /*文字数制限*/
 }
 @media screen and (max-width: 680px) {
   .name {
     width: 100%;
     padding: 0;
     height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
   }
 }
 .name:hover {
@@ -778,14 +795,17 @@ h2 {
 }
 .price {
   width: calc(30% - 10px);
-  padding: 0 5px;
+  padding: 0 10px;
   text-align: right;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 680px) {
   .price {
     width: 100%;
-    padding: 0;
+    padding: 5px 10px;
     text-align: right;
+    font-size: 1.2rem;
   }
 }
 /* ----------------------------------ここからフッター----------------------------- */
