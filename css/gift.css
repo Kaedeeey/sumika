@@ -508,8 +508,9 @@ h2 {
 }
 @media screen and (max-width: 680px) {
   .parallax {
-    min-height: 200px;
-    background-attachment: block;
+    min-height: 150px;
+    background-attachment: scroll;
+    background-position: 0% 0%;
   }
 }
 .parallax.back1 {
