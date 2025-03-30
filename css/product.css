@@ -934,11 +934,12 @@ h3 {
   width: 100%;
   display: flex;
   margin: 10px auto;
+  justify-content: end;
 }
 @media screen and (max-width: 680px) {
   .graph-item-list1 {
     width: 100%;
-    margin: 5px auto;
+    margin: 5px 0;
   }
 }
 .graph-item-list1-1 {
@@ -949,56 +950,78 @@ h3 {
 @media screen and (max-width: 680px) {
   .graph-item-list1-1 {
     width: 100%;
-    margin: 5px auto;
+    margin: 5px 0;
   }
 }
 @media screen and (max-width: 680px) {
   .graph-item-list1 a {
-    width: 85%;
+    width: 60%;
+    margin: 0 5px 0 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .graph-item-list1-1 a {
+    width: 60%;
     margin: 0 5px 0 0;
   }
 }
 .graph-item-list1 a img {
   width: 100%;
 }
-@media screen and (max-width: 680px) {
-  .graph-item-list1-1 a {
-    width: 85%;
-    margin: 0 0 0 5px;
-  }
+.graph-item-list1 a img:hover {
+  opacity: 0.6;
 }
 .graph-item-list1-1 a img {
   width: 100%;
 }
+.graph-item-list1-1 a img:hover {
+  opacity: 0.6;
+}
 .graph-item-tx {
-  width: 30%;
+  width: 100%;
   display: grid;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  padding: 150px 20px;
+  position: absolute;
+  top: 50%;
 }
 @media screen and (max-width: 680px) {
   .graph-item-tx {
     width: 100%;
-    padding: 50px 5px;
     font-size: 1.2rem;
     line-height: 1.5rem;
     text-wrap: wrap;
-    margin: 0 5px;
   }
 }
 .p-tx {
   text-align: end;
 }
+.item-tx {
+  width: 40%;
+  position: relative;
+}
 .point {
-  width: 25%;
-  margin: 40px 10px auto 10px;
+  width: 40%;
+  position: absolute;
+  left: 5px;
+  top: 15%;
 }
 @media screen and (max-width: 680px) {
   .point {
+    display: none;
+  }
+}
+.point1 {
+  width: 40%;
+  position: absolute;
+  right: 5px;
+  top: 15%;
+}
+@media screen and (max-width: 680px) {
+  .point1 {
     display: none;
   }
 }

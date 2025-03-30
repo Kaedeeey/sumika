@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* * {
+* {
   outline: 1px solid blue;
-} */
+}
 html {
   font-size: 10px;
   scroll-behavior: smooth; /*滑らかにボタンを押して該当場所に飛ぶ*/
@@ -428,7 +428,6 @@ h2 {
 }
 @media screen and (max-width: 680px) {
   .section-btn {
-    width: 100%;
     margin: 50px auto 100px;
   }
 }
@@ -448,12 +447,16 @@ h2 {
     margin: 20px auto;
     text-decoration: none;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
-/* .btn-gift {
-  box-shadow: 2px 2px 2px #ccc;
-} */
+.btn-3 img {
+  width: 80%;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
 .btn-3:hover {
   box-shadow: unset;
   transform: translateY(4px);
@@ -475,7 +478,7 @@ h2 {
     width: 80%;
     display: block;
     margin: 20px auto;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-decoration: none;
     line-height: 2rem;
   }
@@ -484,12 +487,13 @@ h2 {
   box-shadow: unset;
   transform: translateY(4px);
 }
-/* @media screen and (max-width: 680px) {
-  .btn-3-c:hover {
-    text-decoration: none;
-    line-height: 2rem;
-  }
-} */
+.btn-3-c img {
+  width: 80%;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
 .y-btn-title-g {
   margin: 0 auto;
   padding: 10px 0px;
